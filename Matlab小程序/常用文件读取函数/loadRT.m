@@ -21,4 +21,3 @@ lineData = sscanf(line,'%f',[1 3]);
 T=lineData';
 fclose(fid);
 end
-
