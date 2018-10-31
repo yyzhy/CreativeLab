@@ -4,7 +4,7 @@ function [R,T] = loadRT(filename)
 fid = fopen(filename, 'r');
 lines = textscan(fid, '%s','delimiter', '\n');
 base = 0;
-% ¶ÁÈ¡Ğı×ª¾ØÕóR
+% è¯»å–æ—‹è½¬çŸ©é˜µR
 R=zeros(3,3);
 line = lines{1}{base + 1};
 lineData = sscanf(line,'%f',[1 3]);
@@ -15,7 +15,7 @@ R(2,:)=lineData;
 line = lines{1}{base + 3};
 lineData = sscanf(line,'%f',[1 3]);
 R(3,:)=lineData;
-% ¶ÁÈ¡Æ½ÒÆÊ¸Á¿T
+% è¯»å–å¹³ç§»çŸ¢é‡T
 line = lines{1}{base + 4};
 lineData = sscanf(line,'%f',[1 3]);
 T=lineData';
