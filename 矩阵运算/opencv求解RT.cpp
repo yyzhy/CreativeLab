@@ -4,7 +4,7 @@
 		cv::Mat CPT2 = cv::Mat(1, 3, CV_64F, cv::Scalar(0));
 		cv::Mat S = cv::Mat(3, 1, CV_64F);
 		cv::SVD thissvd;
-		// ¸øµã¶Ô¾ØÕó¸³Öµ
+		// ç»™ç‚¹å¯¹çŸ©é˜µèµ‹å€¼
 		for (int v = 0; v < 5; v++)
 		{
 			for (int u = 0; u < 3; u++)
